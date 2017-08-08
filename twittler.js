@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	var $tweetFeed = $('.tweetFeed');
+	var $tweetFeed = $('#tweetFeed');
         $tweetFeed.html('');
-    var $users = $('.users')
+    var $users = $('#users')
     var $userFeed = $('#userfeed');
     var tweetUser = $('')
 
@@ -80,7 +80,7 @@ $(document).ready(function() {
     	showUserFeed(user);
     })
 
-   $('.users').on('click', 'button', function() {
+   $('#users').on('click', 'button', function() {
    		$userFeed.html('')
    		$users.hide().fadeOut();
    		$tweetFeed.show().fadeIn();

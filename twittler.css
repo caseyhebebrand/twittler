@@ -1,3 +1,68 @@
-.users {
+.twittlerHeading {
+	background-color: #0084b4;
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 25px;
+	padding: 15px;
+}
+
+#users {
 	display: none;
 }
+
+.button {
+	background-color: #c0deed;
+    border: none;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.feed {
+	background-color: #f0fff0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;;
+	
+}
+
+.feed div {
+	border-style: solid;
+	border-color: #0084b4;
+}
+
+#tweetFeed a {
+	font-weight: bold;
+	padding: none;
+	position: absolute;
+
+}
+
+#tweetFeed h6 {
+	padding: 5px;
+}
+
+#tweetFeed p {
+	padding: 5px;
+	font-size: 23px;
+}
+
+.feed #userFeed a {
+	font-weight: bold;
+	padding: none;
+	position: absolute;
+}
+
+.feed #userFeed h6 {
+	padding: 5px;
+}
+
+.feed #userFeed p {
+	padding: 5px;
+	font-size: 23px;
+}
+
