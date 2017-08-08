@@ -22,9 +22,9 @@ $(document).ready(function() {
           var month = tweet.created_at.getMonth() + 1;
           var day = tweet.created_at.getDate();
           var year = tweet.created_at.getFullYear();
-          var hour = tweet.created_at.getHours() % 12;
+          var hour = tweet.created_at.getHours() === 0 ? 12 : tweet.created_at.getHours() % 12;
           var minute = tweet.created_at.getMinutes() >= 10 ? tweet.created_at.getMinutes() : "0" + tweet.created_at.getMinutes().toString();
-          var ampm = tweet.created_at.getHours() <=12 ? "am" : "pm";
+          var ampm = tweet.created_at.getHours() < 12 ? "am" : "pm";
           $tweetTime.text(month + '/' + day + '/' + year + ' ' + hour + ':' + minute + ampm);
           $tweetMessage.text(tweet.message);
 
@@ -57,9 +57,9 @@ $(document).ready(function() {
     		var month = tweet.created_at.getMonth() + 1;
           	var day = tweet.created_at.getDate();
           	var year = tweet.created_at.getFullYear();
-          	var hour = tweet.created_at.getHours() % 12;
+          	var hour = tweet.created_at.getHours() === 0 ? 12 : tweet.created_at.getHours() % 12;
           	var minute = tweet.created_at.getMinutes() >= 10 ? tweet.created_at.getMinutes() : "0" + tweet.created_at.getMinutes().toString();
-          	var ampm = tweet.created_at.getHours() <=12 ? "am" : "pm";
+          	var ampm = tweet.created_at.getHours() < 12 ? "am" : "pm";
           	$userTime.text(month + '/' + day + '/' + year + ' ' + hour + ':' + minute + ampm);
           	$userMessage.text(tweet.message);
 
