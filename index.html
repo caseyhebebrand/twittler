@@ -8,18 +8,18 @@
   </head>
   <body>
     <div class="twittlerHeading">
-      <h1>Twittler</h1>
-      <input type="text" id="TweetText" autofocus maxlength="140" placeholder="Tweet your feelings." autocomplete="off">
-      <button type="button">Submit</button>
+      <div>Twittler</div>
     </div>
 
-    <div class="feed" id="tweetFeed"></div>
-
-    <div class="feed" id="users">
-      <button type="button">Back</button>
-      <div id="userfeed"></div>
+    <div class="page" id="homePage">
+      <div class="feed" id="homeFeed"></div>
     </div>
-
+  
+    <div class="page" id="userPage">
+      <div id="userWelcome"></div>
+      <button id="userPageBackButton" type="button">Back</button>
+      <div class="feed" id="userFeed"></div>
+    </div>
 
   </body>
 </html>
